@@ -1,0 +1,3 @@
+/.npmignore
+/warp-works-*.tgz
+/**/*.test.js
