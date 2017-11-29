@@ -14,6 +14,11 @@ describe("index", () => {
         expect(moduleToTest.initializeIndex).to.be.a('function').and.to.have.lengthOf(1);
     });
 
+    it("should expose function indexDocument() with 4 params", () => {
+        expect(moduleToTest).to.have.property('indexDocument');
+        expect(moduleToTest.indexDocument).to.be.a('function').and.to.have.lengthOf(4);
+    });
+
     it("should expose function indexDomain() with 2 params", () => {
         expect(moduleToTest).to.have.property('indexDomain');
         expect(moduleToTest.indexDomain).to.be.a('function').and.to.have.lengthOf(2);

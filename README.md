@@ -6,16 +6,16 @@ ElasticSearch implementation for the search plugin for WarpJS.
 
 Add the following configuration to the `plugins` list:
 
-  {
-    "name": "ElasticSearch plugin",
-    "moduleName": "@warp-works/warpjs-elasticsearch-plugin",
-    "path": "/search",
-    "type": "search",
-    "config": {
-      "host": "http://localhost:9200",
-      "indexName": "warpjs"
+    {
+      "name": "ElasticSearch plugin",
+      "moduleName": "@warp-works/warpjs-elasticsearch-plugin",
+      "path": "/search",
+      "type": "search",
+      "config": {
+        "host": "http://localhost:9200",
+        "indexName": "warpjs"
+      }
     }
-  }
 
 
 ## API
@@ -24,6 +24,16 @@ Add the following configuration to the `plugins` list:
 ### plugin(config, warpCore, Persistence)
 
 Prepare the plugin to be used.
+
+
+### plugin.indexDocument(config, persistence, entity, instance)
+
+Add the given instance to the index.
+
+
+### plugin.indexDomain(config, warpCore)
+
+Index the entire domain.
 
 
 ### plugin.initializeIndex(config)
@@ -42,3 +52,8 @@ Generate an ID for the indexing service. This will generate an ID from
 ### plugin.entity.payload(persistence, entity, instance)
 
 This function generate the payload to be used to add to the indexing service.
+
+
+### plugin.getUrl()
+
+Returns the URL where to make GET / POST calls.

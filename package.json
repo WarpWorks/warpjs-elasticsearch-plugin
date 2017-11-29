@@ -1,10 +1,11 @@
 {
   "name": "@warp-works/warpjs-elasticsearch-plugin",
-  "version": "1.2.0-rc1",
+  "version": "1.2.0-rc2",
   "description": "Elasticsearch plugin for WarpJS",
   "main": "index.js",
   "scripts": {
-    "grunt": "grunt",
+    "prepublish": "npm run grunt && npm test",
+    "grunt": "echo 'TODO: add grunt'",
     "test:unit": "mocha \"*.unit.test.js\" \"lib/**/*.unit.test.js\"",
     "test": "npm run -s test:unit"
   },
@@ -39,6 +40,6 @@
   },
   "peerDependencies": {
     "@quoin/expressjs-routes-info": "=>0.1.10",
-    "@warp-works/warpjs-utils": ">=0.2.6"
+    "@warp-works/warpjs-utils": ">=1.2.0"
   }
 }
