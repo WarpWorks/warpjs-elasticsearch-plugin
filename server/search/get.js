@@ -3,7 +3,7 @@ const RoutesInfo = require('@quoin/expressjs-routes-info');
 const warpjsUtils = require('@warp-works/warpjs-utils');
 
 const constants = require('./../../lib/constants');
-const createPagination = require('./create-pagination');
+const pagination = require('./pagination');
 const mapHitsToResources = require('./map-hits-to-resources');
 const search = require('./../../lib/search');
 
@@ -40,7 +40,7 @@ module.exports = (req, res) => {
                         })
                         .then(() => mapHitsToResources(result.hits))
                         .then((results) => resource.embed('results', results))
-                        .then(() => createPagination(result.total, q, p, config.pageSize))
+                        .then(() => pagination(result.total, q, p, config.pageSize))
                         .then((pages) => resource.embed('pages', pages))
                     )
                     .then(() => warpjsUtils.sendHal(req, res, resource, RoutesInfo))

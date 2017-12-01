@@ -1,0 +1,9 @@
+<nav aria-label="Page navigation">
+  <ul class="pagination">
+    {{#each pages as |page|}}
+    <li class="{{#if page.disabled}}disabled{{/if}} {{#if page.isCurrent}}active{{/if}}">
+        {{> pagination-item page=page}}
+      </li>
+    {{/each}}
+  </ul>
+</nav>

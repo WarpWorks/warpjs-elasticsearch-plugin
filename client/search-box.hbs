@@ -1,0 +1,17 @@
+<form class="form-inline pull-right" method="get" action="{{_links.search.href}}">
+  <div class="form-group">
+    <div class="input-group">
+      <input type="text" name="q" class="form-control"
+          {{#if withSearch}}
+            placeholder="Search again..."
+          {{else}}
+            placeholder="I am looking for..."
+          {{/if}}
+          value="{{q}}"
+          />
+      <div class="input-group-addon">
+        <span class="glyphicon glyphicon-search clickable" data-warpjs-action="search"></span>
+      </div>
+    </div>
+  </div>
+</form>

@@ -1,0 +1,13 @@
+{{#if page.isPrevious}}
+  {{#if page.disabled}}
+    <span><span aria-hidden="true">
+  {{else}}
+    <a href="{{page._links.self.href}}">
+  {{/if}}
+      &lt;
+  {{#if page.disabled}}
+    </span></span>
+  {{else}}
+    </a>
+  {{/if}}
+{{/if}}
