@@ -6,7 +6,7 @@ const indexDomain = require('./lib/index-domain');
 const initializeIndex = require('./lib/initialize-index');
 
 function plugin(config, warpCore, Persistence) {
-    return (baseUrl, staticUrl) => app(config, warpCore, Persistence, baseUrl, staticUrl);
+    return (baseUrl, staticUrl) => app(config, warpCore, baseUrl, staticUrl);
 }
 
 plugin.initializeIndex = (config) => initializeIndex(config);

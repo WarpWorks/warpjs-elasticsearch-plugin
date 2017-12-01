@@ -1,0 +1,54 @@
+{{#partial "content"}}
+  <br />
+  <div class="row search-results">
+    <div class="col-xs-1 left-right-margin"></div>
+    <div class="col-md-10">
+      <div class="row">
+        <div class="col-md-6">
+          {{#if withSearch}}
+            {{#if total}}
+              <div>Showing {{firstResult}} - {{lastResult}} of {{total}}</div>
+              <div>results for "{{q}}"</div>
+            {{else}}
+              <div class="text-warning">No results found for "{{q}}".</div>
+            {{/if}}
+          {{/if}}
+        </div>
+        <div class="col-md-6">
+          <form class="form-inline pull-right" method="get" action="{{_links.search.href}}">
+            <div class="form-group">
+              <div class="input-group">
+                <input type="text" name="q" class="form-control"
+                    {{#if withSearch}}
+                      placeholder="Search again..."
+                    {{else}}
+                      placeholder="I am looking for..."
+                    {{/if}}
+                    value="{{q}}"
+                    />
+                <div class="input-group-addon">
+                  <span class="glyphicon glyphicon-search clickable" data-warpjs-action="search"></span>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      {{#if total}}
+        <div class="row">
+          <div class="col-xs-12"><hr /></div>
+        </div>
+        <div class="row search-results-items">
+          {{> results results=_embedded.results}}
+        </div>
+        <div class="row">
+          Pagination goes here.
+        </div>
+      {{/if}}
+    </div>
+    <div class="col-xs-1 left-right-margin"></div>
+  </div>
+{{/partial}}
+
+{{> page-portal}}
+

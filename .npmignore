@@ -1,3 +1,6 @@
+/.babelrc
 /.npmignore
+/grunt
+/Gruntfile.js
 /warp-works-*.tgz
 /**/*.test.js

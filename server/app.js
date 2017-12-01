@@ -5,7 +5,7 @@ const warpjsUtils = require('@warp-works/warpjs-utils');
 const repoRoot = path.dirname(require.resolve('./../package.json'));
 const routes = require('./routes');
 
-module.exports = (config, warpCore, Persistence, baseUrl, staticUrl) => {
+module.exports = (config, warpCore, baseUrl, staticUrl) => {
     const app = express();
 
     baseUrl = (baseUrl === '/') ? '' : baseUrl;
@@ -14,10 +14,12 @@ module.exports = (config, warpCore, Persistence, baseUrl, staticUrl) => {
     app.set('views', warpjsUtils.getHandlebarsViewsDir());
     app.set('base-url', baseUrl);
     app.set('static-url', staticUrl);
+    app.set('plugin-config', config);
+    app.set('warpjs-core', warpCore);
 
     app.use('/assets', express.static(path.join(repoRoot, 'assets')));
 
-    app.use(routes(config, warpCore, Persistence, baseUrl || '/').router);
+    app.use(routes(baseUrl || '/').router);
 
     return app;
 };

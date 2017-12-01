@@ -13,7 +13,8 @@ Add the following configuration to the `plugins` list:
       "type": "search",
       "config": {
         "host": "http://localhost:9200",
-        "indexName": "warpjs"
+        "indexName": "warpjs",
+        "pageSize": 10
       }
     }
 
