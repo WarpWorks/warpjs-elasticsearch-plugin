@@ -8,5 +8,9 @@ const template = require('./template.hbs');
 
         $(warpjsUtils.constants.CONTENT_PLACEHOLDER).html(content);
         warpjsUtils.documentReady($);
+
+        $(warpjsUtils.constants.CONTENT_PLACEHOLDER).on('click', '.search-box [data-warpjs-action="search"]', function(e) {
+            $(this).closest('form').submit();
+        });
     })
 ))(jQuery);

@@ -1,5 +1,9 @@
 # Releases
 
+## 1.2.0-rc4 - 2017-12-01
+
+- Converted to fuzzy search.
+
 ## 1.2.0-rc3 - 2017-12-01
 
 - Fixed package.json typo in peerDependencies.
