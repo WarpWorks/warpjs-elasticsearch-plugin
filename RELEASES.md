@@ -1,5 +1,9 @@
 # Releases
 
+## 1.2.0 - 2017-12-03
+
+- Adding `getDocument()`.
+
 ## 1.2.0-rc4 - 2017-12-01
 
 - Converted to fuzzy search.

@@ -27,6 +27,11 @@ Add the following configuration to the `plugins` list:
 Prepare the plugin to be used.
 
 
+### plugin.getDocument(config, type, id)
+
+Retrieve the document.
+
+
 ### plugin.indexDocument(config, persistence, entity, instance)
 
 Add the given instance to the index.
