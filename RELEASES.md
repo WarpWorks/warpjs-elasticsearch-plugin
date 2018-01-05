@@ -1,5 +1,9 @@
 # Releases
 
+## 1.2.1 - 2018-01-04
+
+- Async getDomainByName().
+
 ## 1.2.0 - 2017-12-03
 
 - Adding `getDocument()`.
