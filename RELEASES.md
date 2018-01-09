@@ -1,5 +1,9 @@
 # Releases
 
+## 1.2.3 - 2018-01-09
+
+- Revert changes to `getDomainByName()`.
+
 ## 1.2.2 - 2018-01-08
 
 - Adding persistence to `.getDomainByName()`.
