@@ -11,7 +11,7 @@ module.exports = {
         target: 'web',
         devtool: 'source-map',
         entry: {
-            [constants.SCRIPT_FILENAME]: './client/index.js'
+            [constants.versionedName]: './client/index.js'
         },
         node: {
             fs: 'empty'
@@ -21,12 +21,8 @@ module.exports = {
             filename: '[name].min.js'
         },
         plugins: [
-            new webpack.optimize.CommonsChunkPlugin({
-                names: 'vendor',
-                minChunks: (module) => module.context && module.context.indexOf('node_modules') !== -1
-            }),
             new webpack.optimize.UglifyJsPlugin({
-                compress: false
+                compress: true
             })
         ],
         module: {

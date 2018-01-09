@@ -1,5 +1,10 @@
 # Releases
 
+## 1.2.2 - 2018-01-08
+
+- Adding persistence to `.getDomainByName()`.
+- Added version to assets' name.
+
 ## 1.2.1 - 2018-01-04
 
 - Async getDomainByName().

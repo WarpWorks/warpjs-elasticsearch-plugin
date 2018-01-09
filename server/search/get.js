@@ -12,10 +12,9 @@ module.exports = (req, res) => {
         html: () => {
             warpjsUtils.sendIndex(res, "Search",
                 [
-                    `${req.app.get('base-url')}/assets/vendor.min.js`,
-                    `${req.app.get('base-url')}/assets/${constants.SCRIPT_FILENAME}.min.js`
+                    `${req.app.get('base-url')}/assets/${constants.assets.js}`
                 ],
-                `${req.app.get('base-url')}/assets/style.min.css`
+                `${req.app.get('base-url')}/assets/${constants.assets.css}`
             );
         },
 

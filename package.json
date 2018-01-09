@@ -1,6 +1,6 @@
 {
   "name": "@warp-works/warpjs-elasticsearch-plugin",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "Elasticsearch plugin for WarpJS",
   "main": "index.js",
   "scripts": {
@@ -36,7 +36,7 @@
     "@quoin/node-test-helpers": "0.3.1",
     "@warp-works/warpjs-plugins": "1.2.x",
     "@warp-works/warpjs-utils": "1.2.x",
-    "ajv": "5.5.x",
+    "ajv": "5.5.2",
     "babel-core": "6.26.0",
     "babel-loader": "7.1.2",
     "babel-preset-env": "1.6.1",
