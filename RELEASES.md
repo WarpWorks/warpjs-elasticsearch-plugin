@@ -1,5 +1,9 @@
 # Releases
 
+## 1.2.5 - 2018-08-06
+
+- Version 1.2.4 was already published.
+
 ## 1.2.4 - 2018-08-06
 
 - #2: Refactored for new portal header.
