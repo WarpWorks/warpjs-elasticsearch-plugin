@@ -1,5 +1,9 @@
 # Releases
 
+## 1.2.4 - 2018-08-06
+
+- #2: Refactored for new portal header.
+
 ## 1.2.3 - 2018-01-09
 
 - Revert changes to `getDomainByName()`.

@@ -10,7 +10,7 @@ const search = require('./../../lib/search');
 module.exports = (req, res) => {
     warpjsUtils.wrapWith406(res, {
         html: () => {
-            warpjsUtils.sendIndex(res, "Search",
+            warpjsUtils.sendPortalIndex(req, res, RoutesInfo, "Search",
                 [
                     `${req.app.get('base-url')}/assets/${constants.assets.js}`
                 ],
