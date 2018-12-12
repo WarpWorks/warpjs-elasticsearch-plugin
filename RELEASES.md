@@ -1,5 +1,9 @@
 # Releases
 
+## 1.2.7 - 2018-12-12
+
+- npm outdated.
+
 ## 1.2.5 - 2018-08-06
 
 - Version 1.2.4 was already published.
