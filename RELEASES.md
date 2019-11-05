@@ -1,5 +1,9 @@
 # Releases
 
+## 1.2.8 - 2019-11-05
+
+- npm outdated. Added nyc, jscpd, and Github action.
+
 ## 1.2.7 - 2018-12-12
 
 - npm outdated.
