@@ -1,0 +1,23 @@
+{
+  "all": true,
+  "report-dir": "./reports/coverage",
+  "temp-dir": "./reports/nyc_output",
+  "check-coverage": false,
+  "exclude": [
+    "**/*.*.test.js",
+    "Gruntfile.js",
+    "grunt/**/*.js",
+    "reports",
+    "server.js"
+  ],
+  "reporter": [
+    "cobertura",
+    "html"
+  ],
+  "watermarks": {
+    "statements": [50, 80],
+    "lines": [50, 80],
+    "functions": [50, 80],
+    "branches": [50, 80]
+  }
+}
