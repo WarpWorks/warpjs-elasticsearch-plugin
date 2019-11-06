@@ -1,5 +1,9 @@
 # Releases
 
+## 1.2.9 - 2019-11-06
+
+- Fixed ES syntax '_source_exclude'.
+
 ## 1.2.8 - 2019-11-05
 
 - npm outdated. Added nyc, jscpd, and Github action.
