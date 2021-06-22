@@ -1,5 +1,13 @@
 # Releases
 
+## 2.0.1 - 2021-06-21
+
+- Merging into master branch and latest tag.
+
+## 2.0.0-rc.1 - 2021-06-17
+
+- Updated packages and node@14
+
 ## 1.2.9 - 2019-11-06
 
 - Fixed ES syntax '_source_exclude'.
