@@ -1,6 +1,6 @@
 {
   "name": "@warp-works/warpjs-elasticsearch-plugin",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Elasticsearch plugin for WarpJS",
   "main": "index.js",
   "publishConfig": {
