@@ -1,5 +1,9 @@
 # Releases
 
+## 2.0.2 - 2021-12-15
+
+- Filter PathAlias from indexing since it results in broken links.
+
 ## 2.0.1 - 2021-06-21
 
 - Merging into master branch and latest tag.
